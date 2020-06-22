@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <title>Hee su Lee — Graphic Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <script src="main.js"></script>
+    <style>
+        #site-nav .info {
+            color: red;
+        }
+
+        .info-container {
+            padding: 100px;
+
+        }
+
+        .title {
+            font-size: 25px;
+            line-height: 1.2;
+            font-weight: 500;
+        }
+
+        .year {
+            padding-top: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 100%;
+            padding-top: 40px;
+            padding-bottom: 100px;
+        }
+
+        .sub-title {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .info-desc {
+            padding-left: 30px;
+            padding-top: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.8;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+
+        .content-text {
+            margin: 30px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        .circle:nth-child(1) {
+            color: lightskyblue;
+        }
+
+        .circle:nth-child(2) {
+            color: darkorchid;
+        }
+
+        .circle {
+            border-radius: 50px;
+            border: solid 2px;
+            font-size: 11px;
+            text-align: center;
+            line-height: 10px;
+            display: inline-block;
+            padding: 10px;
+            margin-right: 5px;
+            font-weight: 600;
+        }
+
+        @media(max-width:800px) {
+            .info-container {
+                padding: 20px;
+            }
+
+            .container {
+                display: block;
+            }
+
+            .circle {
+                margin-top: 30px;
+            }
+
+            .container {
+                padding-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 텍스트 영역 -->
+    <div class="wrapper">
+        <header id="header">
+            <h1 id="name">
+                <a href="index.html">HEE SU LEE</a>
+            </h1>
+
+            <nav>
+                <ul class="menu">
+                    <li class="target"><a href="index.html">Projects</a>
+                    </li>
+                    <li class=><a href="info.html">Info</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <img class="image" src="img/lg_weather/1.jpg" width="100%" height="100%">
+        <div class="info-container">
+            <div class="title">
+                LG Weather APP Illust
+            </div>
+            <div class="sub-title">
+                Client | LG
+            </div>
+
+            <div class="year">
+                2016. 07
+            </div>
+
+            <main class="container">
+                <section class="left">
+                    <div class="sub-title">
+                        Role
+                    </div>
+                    </br>
+                    Illust (20%) </br>
+                </section>
+
+                <section class="right">
+                    <div class="circle-container">
+                        <div class="circle">
+                            GUI
+                        </div>
+                        <div class="circle">
+                            Illust
+                        </div>
+                    </div>
+                    <p>
+                        LG V30 날씨 앱 내부에 들어가는 일러스트 작업을 진행하였습니다. </br>
+                        각각의 날씨 컨셉에 맞는 자연풍경을 2016년 트렌드에 맞는 플랫한 스타일의 일러스트로 표현하였습니다.</br>
+                        전반적으로 날씨 정보의 가시성을 확보하기 위해 일러스트를 톤 다운시키고 메인 인포메이션이 가장 눈에 잘 들어오기 위한 최적의 레이아웃을 고려하여 일러스트를
+                        배치하였습니다.</br>
+                        Clear (Day/Night), Cloudy(Day/Night)
+                    </p>
+                </section>
+
+            </main>
+            <img class="image" src="img/lg_weather/2.jpg" width="100%" height="100%">
+        </div>
+
+
+        <!-- 푸터 -->
+        <div class="flex-container">
+            <div class="flex-item">
+                Designed & Developed by Heesu Lee. 2020
+            </div>
+        </div>
+</body>
+
+</html>

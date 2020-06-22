@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <title>Hee su Lee — Graphic Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <script src="main.js"></script>
+    <style>
+        #site-nav .info {
+            color: red;
+        }
+
+        .info-container {
+            padding: 100px;
+
+        }
+
+        .title {
+            font-size: 25px;
+            line-height: 1.2;
+            font-weight: 500;
+        }
+
+        .year {
+            padding-top: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 100%;
+            padding-top: 40px;
+            padding-bottom: 100px;
+        }
+
+        .sub-title {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .info-desc {
+            padding-left: 30px;
+            padding-top: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.8;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+
+        .content-text {
+            margin: 30px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        .circle:nth-child(1) {
+            color: lightskyblue;
+        }
+
+        .circle:nth-child(2) {
+            color: darkorchid;
+        }
+
+
+        .circle {
+            border-radius: 50px;
+            border: solid 2px;
+            font-size: 11px;
+            text-align: center;
+            line-height: 10px;
+            display: inline-block;
+            padding: 10px;
+            margin-right: 5px;
+            font-weight: 600;
+        }
+
+        @media(max-width:800px) {
+            .info-container {
+                padding: 20px;
+            }
+
+            .container {
+                display: block;
+            }
+
+            .circle {
+                margin-top: 30px;
+            }
+
+            .container {
+                padding-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 텍스트 영역 -->
+    <div class="wrapper">
+        <header id="header">
+            <h1 id="name">
+                <a href="index.html">HEE SU LEE</a>
+            </h1>
+
+            <nav>
+                <ul class="menu">
+                    <li class="target"><a href="index.html">Projects</a>
+                    </li>
+                    <li class=><a href="info.html">Info</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <img class="image" src="img/2018/1.jpg" width="100%" height="100%">
+        <div class="info-container">
+            <div class="title">
+                2018 amoeba CALENDAR
+            </div>
+            <div class="sub-title">
+                Client | amoeba
+            </div>
+
+            <div class="year">
+                2017. 08 - 2017. 12
+            </div>
+
+            <main class="container">
+                <section class="left">
+                    <div class="sub-title">
+                        Role
+                    </div>
+                    </br>
+                    Layout Format (100%)</br>
+                    Art works (20%)</br>
+                    Desk Calendar (80%)</br>
+                </section>
+
+                <section class="right">
+                    <div class="circle-container">
+                        <div class="circle">
+                            Package
+                        </div>
+                        <div class="circle">
+                            Graphic
+                        </div>
+                    </div>
+                    <p>
+                        Architectural Graphics of 12 Architects : 12 건축 그래픽스</br>
+                        '건축'을 주제로 안도 다다오, 필립 존슨, 다니엘 리베스킨트, 자하하디드, 노먼포스터, 렘 콜하스 등 현대건축가 12명을 선정하여 그들이 건축을 통해 추구하고자 했던
+                        정신을
+                        그래픽적으로 표현하였습니다. </br>
+                        건축물의 정신을 단순히 2D그래픽으로만 표현할 수 없기에 종이 컷팅을 통해 조립, 분해, 접기 등 다양한 종이의 물적 성질을 이용해 사용자의 선택으로 입체적으로 전환할 수
+                        있도록 발전시켰습니다.</br></br>
+                        11월 RATIONAL FRAME | 합리적 프레임 Philip Johnson</br>
+                        12월 PILGRIM`S LIGHT | 순례자의 빛 Ando Tadao
+                    </p>
+                </section>
+
+            </main>
+            <img class="image" src="img/2018/5.jpg" width="100%" height="100%">
+            <img class="image" src="img/2018/6.jpg" width="100%" height="100%">
+            <img class="image" src="img/2018/7.jpg" width="100%" height="100%">
+            <img class="image" src="img/2018/8.jpg" width="100%" height="100%">
+            <img class="image" src="img/2018/9.jpg" width="100%" height="100%">
+            <img class="image" src="img/2018/10.jpg" width="100%" height="100%">
+            <img class="image" src="img/2018/2.jpg" width="100%" height="100%">
+            <img class="image" src="img/2018/3.jpg" width="100%" height="100%">
+            <img class="image" src="img/2018/4.jpg" width="100%" height="100%">
+        </div>
+
+
+        <!-- 푸터 -->
+        <div class="flex-container">
+            <div class="flex-item">
+                Designed & Developed by Heesu Lee. 2020
+            </div>
+        </div>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <title>Hee su Lee — BX Designer</title>
+    <title>Heesu Lee — BX Designer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
     <script src="main.js"></script>
@@ -14,44 +14,121 @@
         }
 
         .info-container {
-            padding-bottom: 100px;
+            padding-top: 100px;
+            padding-bottom: 200px;
+            padding-left: 60px;
         }
 
         .info-text {
-            font-size: 20px;
-            padding-top: 40px;
-            padding-left: 30px;
-            padding-bottom: 30px;
-            padding-right: 30px;
+            font-size: 18px;
+            padding-left: 40px;
+            padding-right: 60px;
         }
 
-        .info-main {
-            padding-left: 250px;
-            padding-right: 30px;
+        .info-link {
+            padding-top: 20px;
+            font-size: 20px;
         }
 
         .info-sub {
-            padding-top: 50px;
-            font-size: 15px;
-            line-height: 1.2;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 40px;
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
         }
 
-        .info-desc {
-            padding-top: 15px;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 1.4;
+        .info-title {
+            font-size: 25px;
+            padding-left: 60px;
+            padding-right: 60px;
         }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            flex: none;
+            flex-basis: 25%;
+            margin-bottom: 40px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            padding: 0;
+            grid-template-rows: 100%;
+        }
+
+        .title {
+            padding-top: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            padding-top:10px;
+            font-weight: 300;
+        }
+
 
         @media(max-width:800px) {
+            .info-container {
+                margin: 0px;
+                padding-top: 50px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 80px;
+            } 
+
             .info-text {
                 margin: 0px;
-                padding: 20px;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 40px;
+            }
+
+            .info-title {
+                margin: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .info-sub {
+                display: block;
+                margin: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 30px;
+            }
+
+            .item {
+                padding: 0px;
+            }
+
+            .container {
+                display: block;
             }
 
             .info-main {
                 padding: 20px;
             }
+ 
+            .title {  
+                font-size: 20px;
+            } 
+
+            .content {  
+                font-size: 18px;
+                padding-bottom: 20px;
+            } 
+            .flex-item {
+                padding-left: 20px;
+             }
         }
     </style>
 
@@ -62,14 +139,14 @@
     <div class="wrapper">
         <header id="header">
             <h1 id="name">
-                <a href="index.html">HEE SU LEE</a>
+                <a href="index.html">HEESU LEE</a>
             </h1>
 
             <nav>
                 <ul class="menu">
                     <li class><a href="index.html">Projects</a>
                     </li>
-                    <li class="target"><a href="info.html">Info</a>
+                    <li class="target"><a href="info.html">About</a>
                     </li>
                 </ul>
             </nav>
@@ -77,78 +154,132 @@
 
 
         <div class="info-container">
-            <div class="info-text">
-                HeeSu Lee is a BX designer and Illustrator in Korea, whom experienced in wide range of Industries.
-                <br>
+            <main class="container">
+                <section class="left">
+                    <div class="sub-title">
+                        <img class="image" src="img/about/about_me.jpg" width="100%" height="100%">
+                        <div class="info-link">
+                            <ins>
+                                <a href="http://www.linkedin.com/in/heesulee1230" target="_blank">
+                                    LinkedIn ↗︎
+                                </a><br>
+                            </ins>
+                            <ins>
+                                <a href="https://drive.google.com/file/d/1owrTsj_l_-nfg0VlIQWqCWj98c_tB8NP/view?usp=drive_link" target="_blank">
+                                    Resume ↗︎
+                                </a><br>
+                            </ins>
+                            <ins>
+                                <a href="https://www.behance.net/heesul1230220a" target="_blank">
+                                    Behance ↗︎
+                                </a>
+                            </ins>
+                        </div>
+                    </div>
+                </section>
 
-                Her works reflecting abilities in graphic design, spacialize illustration, printing-based design, as
-                well as web-based UI design.
-                <br>
-                <br>
-                <ins>
-                    <a href="http://www.linkedin.com/in/heesulee1230" target="_blank">
-                        LinkedIn &#x2192
+                <section class="right">
+                    <div class="info-text">
+                        Hi, I'm Heesu Lee a Graphic designer specializing in Branding & Digital marketing design.
+                        I currently based in Vancouver, Canada.🇨🇦
+                        <br><br>
+                        I've worked in both agency and startup settings.
+                        My initial experiences came from working at a startup where I had the privilege of working with clients such as 
+                        <ins><a href="samsung_portfolio.html" target="_blank">SAMSUNG🔗</a>,</ins> 
+                        <ins><a href="lg_weather_portfoilo.html" target="_blank">LG🔗</a></ins>, and 
+                        <ins><a href="bohem_portfoil.html" target="_blank">KT&G🔗</a></ins>.
+                        Through my experience in In-House roles, I have learned how to consider design outcomes from the customer's perspective. 
+                        <br><br>
+                        Over the past 6+ years, I've honed my skills in creative graphic design, covering a range of areas from packaging and editorial design to branding, websites, UI, and marketing materials, both offline and online.
+                        <br><br>
+                        My design philosophy is rooted in understanding the "why" from the customer's perspective, which forms the foundation for all my projects.
+                        This approach guarantees that every design decision is purposeful and aligned with the client's goals.
+                    </div>
+                </section>
+            </main>
+        </div> 
+
+
+        <div class="info-title">
+            <hr style="width: 100%; height: 1px; border:none; background-color:rgb(179, 179, 179);">
+            More things about me 😃
+        </div> 
+            <ul class="info-sub">
+                <li class="item">
+                    <a>
+                        <div>
+                            <img class="image" src="img/about/about_runner.jpg" width="100%" height="100%">
+                        </div>
                     </a>
-                </ins>
-                <br>
-                <br>
-
-            </div>
-
-            <div class="info-main">
-                <div class="info-sub">
-                    SPECIALITIES
-                </div>
-                <div class="info-desc">
-                    Branding, User Interface Design, Illustration, Character Design, Design Planning / Strategy, HTML,
-                    CSS
-                </div>
-                <div class="info-sub">
-                    SKILLS
-                </div>
-                <div class="info-desc">
-                    Adobe Creative Suites(Photoshop, Illustrator, InDesign, XD), MAYA, 3Ds Max, Sketch, Figma, Visual
-                    Studio
-                    Code
-                </div>
-
-                <div class="info-sub">
-                    CV
-                </div>
-                <div class="info-desc">
-                    Mar. 2020 - Present
-                    <br>
-                    Freelance
-                    <br>
-                    <br>
-                    Mar. 2019 - Mar. 2020
-                    <br>
-                    General Designer | BRUNT
-                    <br>
-                    <br>
-                    May. 2016 - Aug. 2018
-                    <br>
-                    BX / Graphic Designer | amoeba
-                </div>
-
-                <div class="info-sub">
-                    EDUCATION
-                </div>
-                <div class="info-desc">
-                    2011 - 2016
-                    <br>
-                    BA Visual & Package Design | Hanyang University
-                </div>
-            </div>
-
+                    <div class="text">
+                        <div class="title">
+                            Runner 🏃🏽‍♀️
+                        </div>
+                        <div class="content">
+                            Running has helped me cope during the COVID period and continues to assist me in achieving personal goals.
+                            In 2024, I participated in the Vancouver Sun Run Marathon.
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <a>
+                        <div>
+                            <img class="image" src="img/about/about_drawing.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                    <div class="text">
+                        <div class="title">
+                            Urban Sketchers 🎨
+                        </div>
+                        <div class="content">
+                            I love traveling and architecture, so I often draw sketches while traveling.
+                            Urban sketching is a great way to record memories.
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <a>
+                        <div>
+                            <img class="image" src="img/about/about_maker_2.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                    <div class="text">
+                        <div class="title">
+                            Maker 🤲
+                        </div>
+                        <div class="content">
+                            I enjoy creating things by hand, which has led me to learn silvercraft and pottery.
+                            I love giving the items I make as gifts to my friends and family.
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <a>
+                        <div>
+                            <img class="image" src="img/about/about_nature.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+                    <div class="text">
+                        <div class="title">
+                            Nature Lover 🌿
+                        </div>
+                        <div class="content">
+                            I enjoy the peaceful feeling that nature provides.
+                            When my mind is busy, I go hiking to clear my thoughts.
+                        </div>
+                    </div>
+                </li>
+            </ui>
         </div>
+        <br><br><br><br><br><br>
+
 
         <!-- 푸터 -->
         <div class="flex-container">
-            <div class="flex-item">
-                Designed & Developed by Heesu Lee. 2020
-            </div>
-        </div>
+           <div class="flex-item">
+              Designed & Developed by Heesu Lee. 2024
+           </div>
+         </div>
 </body>
 
 </html>
